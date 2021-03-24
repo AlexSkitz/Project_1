@@ -1,4 +1,68 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&family=Roboto:wght@400;700&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&family=Roboto:wght@400;700&display=swap');
+*/
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-Regular.woff2') format('woff2'),
+        url('../fonts/Roboto-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-Medium.woff2') format('woff2'),
+        url('../fonts/Raleway-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-Bold.woff2') format('woff2'),
+        url('../fonts/Raleway-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-SemiBold.woff2') format('woff2'),
+        url('../fonts/Raleway-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-ExtraBold.woff2') format('woff2'),
+        url('../fonts/Raleway-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Bold.woff2') format('woff2'),
+        url('../fonts/Roboto-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.woff2') format('woff2'),
+        url('../fonts/Roboto-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 
 * {
     padding: 0;
@@ -34,3 +98,131 @@ table{
 font-family: 'Raleway', sans-serif;
 font-family: 'Roboto', sans-serif;
 */
+.head {
+    width: 100%;
+    background-color: #000;
+    display: block;
+    position: absolute;
+    top: 40px;
+}
+.firstbanner {
+    width: 100%;
+    position: relative;
+}
+.navigation {
+    max-width: 1230px;
+    margin: 0 auto;
+}
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.flex-between a{
+    padding: 10px 0;
+    width: 50%;
+}
+.flex-around {
+    width: 50%;
+}
+.navi {
+    display: flex;
+    justify-content: space-around;
+    padding: 19px 0;
+}
+.navi_item a {
+    font-family: 'Raleway-Medium', sans-serif;
+    color: #00c0ff;
+    font-size: 18px;
+    text-transform: uppercase;
+   
+}
+.first-screen{
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10% 0;
+    margin-top: 15%;
+}
+.first-screen p{
+    font-family: 'Raleway-Regular', sans-serif;
+    color: #fff;
+    font-size: 22px;
+    max-width: 60%;
+    text-align: center;
+} 
+
+.first-screen img{
+    margin-bottom: 5%;
+    width: 40%;
+} 
+.first-screen input{
+    width: 255px;
+    height: 55px;
+    border-radius: 25px;
+    background-color: rgba(219, 219, 219, 0.8);
+    font-family: 'Roboto-Bold',sans-serif;
+    font-size: 25px;
+    color: #3ea2d8;
+    border: #d4d4d4 1px solid;
+    margin-top: 7%;
+}
+
+@media (max-width: 1024px) {
+    
+.first-screen p {
+    font-size: 18px;
+}
+.first-screen input{
+    width: 225px;
+    height: 45px;
+    border-radius: 20px;
+    font-size: 20px;
+   }
+}
+@media (max-width: 768px) {
+    
+    .first-screen p {
+        font-size: 16px;
+    }
+    .first-screen input{
+        width: 195px;
+        height: 35px;
+        border-radius: 15px;
+        font-size: 16px;
+        margin-top: 4%;
+       }
+       .first-screen img{
+        margin-bottom: 3%;
+    }   
+    .first-screen{
+        padding: 7% 0; 
+    }
+    .navi_item a {
+        font-size: 16px;
+    }
+    }
+@media (max-width: 600px) {
+    .first-screen p{
+        max-width: 80%;
+        font-size: 14px;
+    }
+    .first-screen input{
+        width: 160px;
+        height: 25px;
+        border-radius: 10px;
+        font-size: 14px;
+    }
+    .navi_item a{
+        font-size: 14px;
+    }
+    .navi{
+        padding: 11px 0;
+    }
+    .flex-between a{
+        padding: 2px 0;
+    }
+}
